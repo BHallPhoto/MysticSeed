@@ -42,6 +42,10 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBo
         font-family: 'Beyond-The-Mountains';
         font-size: 2rem;
         text-shadow: 1px 1px 2px $color5;
+
+        @media (max-width: 34em) {
+            font-size: 1.5rem;
+        }
     }
 
     .navbar-toggler {
@@ -77,6 +81,12 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBo
 
     img {
         max-width: 100% \9;
+    }
+
+    h1 {
+        @media(max-width: 34em) {
+            font-size: 1.75rem;
+        }
     }
 }
 

@@ -6770,6 +6770,9 @@ a.text-dark:hover, a.text-dark:focus {
     font-family: 'Beyond-The-Mountains';
     font-size: 2rem;
     text-shadow: 1px 1px 2px #1f201b; }
+    @media (max-width: 34em) {
+      .navbar .navbar-brand {
+        font-size: 1.5rem; } }
   .navbar .navbar-toggler {
     cursor: pointer;
     outline: 0; }
@@ -6794,6 +6797,9 @@ a.text-dark:hover, a.text-dark:focus {
       max-width: 100%; } }
   .mystic-content img {
     max-width: 100% \9; }
+  @media (max-width: 34em) {
+    .mystic-content h1 {
+      font-size: 1.75rem; } }
 
 #join-container {
   background-color: #b17e55;
