@@ -6760,8 +6760,11 @@ a.text-dark:hover, a.text-dark:focus {
   background-position: 0 50%; }
 
 .navbar {
-  width: 100%;
+  width: 85%;
   background: none !important; }
+  @media (max-width: 34em) {
+    .navbar {
+      width: 100%; } }
   .navbar .navbar-brand {
     color: #dfcaac;
     font-family: 'Beyond-The-Mountains';
@@ -6784,6 +6787,31 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: rgba(255, 255, 255, 0.35);
   border-radius: 5px;
   font-family: 'EB Garamond', serif;
-  margin: 5% auto; }
+  margin: 5% auto;
+  max-width: 80%; }
+  @media (max-width: 34em) {
+    .mystic-content {
+      max-width: 100%; } }
+  .mystic-content img {
+    max-width: 100% \9; }
+
+#join-container {
+  background-color: #b17e55;
+  font-family: 'EB Garamond', serif;
+  width: 100%; }
+  #join-container h3 {
+    letter-spacing: 2px;
+    font-weight: bold; }
+  #join-container h5 {
+    color: #1f201b; }
+  #join-container .form-control {
+    background: #111111;
+    border: 3px solid #2f2f2f;
+    padding: 10px; }
+  #join-container .btn {
+    padding: 12px;
+    border: none;
+    color: #000;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
