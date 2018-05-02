@@ -1,5 +1,5 @@
 $color1: rgba(148, 142, 115, 1);
-$color2: rgb(223, 202, 172);
+$color2: rgba(223, 202, 172, 1);
 $color3: rgba(177, 126, 85, 1);
 $color4: rgba(89, 103, 103, 1);
 $color5: rgba(31, 32, 27, 1);
@@ -8,6 +8,8 @@ $txtColor: rgb(210, 235, 255);
 $body-bg: $color5;
 
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$color2}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+$box-shadow: 0px 0px 10px $color5 !important;
 
 // Bootstrap overrides above!
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -21,6 +23,10 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBo
         url('../assets/fonts/Beyond-The-Mountains.ttf.eot?#iefix') format('embedded-opentype'); 
         font-weight: normal;
         font-style: normal;
+}
+
+html {
+    height: 100%;
 }
 
 #mystic {
@@ -91,7 +97,7 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBo
 }
 
 #join-container {
-    background-color: $color3;
+    background-color: $color4;
     font-family: 'EB Garamond', serif;
     width: 100%;
 
@@ -104,16 +110,37 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBo
         color: $color5;
     }
 
+    .form-group {
+        margin-bottom: 0;
+    }
+
     .form-control {
         background: #111111;
         border: 3px solid #2f2f2f;
         padding: 10px;
+        box-shadow: $color4;
+    }
+    .form-control:focus {
+        box-shadow: $box-shadow;
     }
 
     .btn {
+        background-color: $color3;
         padding: 12px;
         border: none;
         color: #000;
         cursor: pointer;
     }
+
+    .btn:hover {
+        background-color: rgba($color2, .5);
+    }
+    .btn:focus {
+        box-shadow: $box-shadow;
+    }
+}
+
+.footer {
+    font-size: .85rem;
+    text-shadow: 1px 1px 2px $color5;
 }
