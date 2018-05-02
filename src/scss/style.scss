@@ -1,0 +1,68 @@
+$color1: rgba(148, 142, 115, 1);
+$color2: rgb(223, 202, 172);
+$color3: rgba(177, 126, 85, 1);
+$color4: rgba(89, 103, 103, 1);
+$color5: rgba(31, 32, 27, 1);
+$txtColor: rgb(210, 235, 255);
+
+$body-bg: $color5;
+
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$color2}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+// Bootstrap overrides above!
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Your normal css goes here!
+@font-face {
+    font-family: 'Beyond-The-Mountains';
+    src:url('../assets/fonts/Beyond-The-Mountains.ttf.woff') format('woff'),
+        url('../assets/fonts/Beyond-The-Mountains.ttf.svg#Beyond-The-Mountains') format('svg'),
+        url('../assets/fonts/Beyond-The-Mountains.ttf.eot'),
+        url('../assets/fonts/Beyond-The-Mountains.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+#mystic {
+    background: url('../assets/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+.navbar {
+    width: 100%;
+    background: none !important;
+
+    .navbar-brand {
+        color: $color2;
+        font-family: 'Beyond-The-Mountains';
+        font-size: 2rem;
+        text-shadow: 1px 1px 2px $color5;
+    }
+
+    .navbar-toggler {
+        cursor: pointer;
+        outline: 0;
+    }
+
+    .nav-item {
+        padding: 0 auto;
+
+        .nav-link {
+            color: $color2;
+            font-family: 'Beyond-The-Mountains';
+            font-size: 1.125rem;
+            text-shadow: 1px 1px 1px $color5;
+        }
+        .nav-link:hover {
+            text-shadow: 2px 2px 2px $color3;
+        }
+    }
+}
+
+.mystic-content {
+    background-color: rgba(255, 255, 255, .35);
+    border-radius: 5px;
+    font-family: 'EB Garamond', serif;
+    margin: 5% auto;
+}
