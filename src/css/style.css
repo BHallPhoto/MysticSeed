@@ -6775,7 +6775,7 @@ html {
     text-shadow: 1px 1px 2px #1f201b; }
     @media (max-width: 34em) {
       .navbar .navbar-brand {
-        font-size: 1.85rem; } }
+        font-size: 1.75rem; } }
   .navbar .navbar-toggler {
     cursor: pointer;
     outline: 0; }
