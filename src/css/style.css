@@ -6788,6 +6788,24 @@ html {
       text-shadow: 1px 1px 1px #1f201b; }
     .navbar .nav-item .nav-link:hover {
       text-shadow: 2px 2px 2px #b17e55; }
+  .navbar .btn {
+    background: none !important;
+    border: none;
+    color: #dfcaac;
+    cursor: pointer; }
+  .navbar .btn:hover {
+    background-color: none; }
+  .navbar .btn:focus {
+    box-shadow: none; }
+  .navbar svg {
+    -webkit-filter: drop-shadow(1px 1px 1px #1f201b);
+    filter: drop-shadow(1px 1px 1px #1f201b); }
+    .navbar svg:hover {
+      color: #d2ebff;
+      -webkit-filter: drop-shadow(2px 2px 2px #b17e55);
+      filter: drop-shadow(2px 2px 2px #b17e55); }
+    .navbar svg:focus {
+      color: #596767; }
 
 .mystic-content {
   background-color: rgba(255, 255, 255, 0.35);

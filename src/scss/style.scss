@@ -1,4 +1,4 @@
-$color1: rgba(148, 142, 115, 1);
+$color1: rgb(166, 182, 189);
 $color2: rgba(223, 202, 172, 1);
 $color3: rgba(177, 126, 85, 1);
 $color4: rgba(89, 103, 103, 1);
@@ -70,6 +70,33 @@ html {
         }
         .nav-link:hover {
             text-shadow: 2px 2px 2px $color3;
+        }
+    }
+
+    .btn {
+        background: none !important;
+        border: none;
+        color: $color2;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: none;
+    }
+    .btn:focus {
+        box-shadow: none;
+    }
+
+    svg {
+        -webkit-filter: drop-shadow(1px 1px 1px $color5);      
+        filter: drop-shadow(1px 1px 1px $color5);  
+        &:hover {
+            color: $txtColor;
+            -webkit-filter: drop-shadow(2px 2px 2px $color3);      
+            filter: drop-shadow(2px 2px 2px $color3);  
+        }
+        &:focus {
+            color: $color4;
         }
     }
 }

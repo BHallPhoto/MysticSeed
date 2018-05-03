@@ -18,6 +18,7 @@
   "homepage": "https://github.com/BHallPhoto/MysticSeed#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "feather-icons": "^4.7.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
   }
